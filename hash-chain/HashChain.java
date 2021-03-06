@@ -102,7 +102,7 @@ public class HashChain {
             hashChain[i] = new SLList();
         }
         while (inFile.hasNext()) {
-            String val = inFile.next();
+            String val = inFile.nextLine();
             int id = Integer.parseInt(val.substring(0, val.indexOf(',')));
             val = val.substring(val.indexOf(',') + 1);
             Node n = new Node(id, val);
